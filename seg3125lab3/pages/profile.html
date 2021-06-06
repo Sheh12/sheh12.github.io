@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css" type="text/css">
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="profilestyle.css" type="text/css">
+    </head>
+    <body>
+        <body>
+            <!-- Start of Header (same for every page)-->
+
+            <div class="main-header">
+                <h1>The Rona Mart</h1>
+            </div>
+    
+            <div class="grid-container">
+    
+              <!-- Navigation Bar Begins -->
+              <div class="navi-bar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li style="float:right"><a href="cart.html">Cart</a></li>
+                    <li style="float:right"><a class="active" href="profile.html">Profile</a></li>
+                </ul>
+              </div>
+    
+              <div id="home" class="nav" style="display:none">
+                <h2>This is the home Page</h2>
+              </div>
+              <div id="about" class="nav" style="display:none">
+                <h2>This is the about Page</h2>
+              </div>
+              <div id="cart" class="nav" style="display:none">
+                <h2>This is the cart Page</h2>
+              </div>
+              <div id="profile" class="nav">
+                <h2>This is the Profile Page</h2>
+              </div>
+              <!-- Navigation Bar Ends -->
+            <!-- End of Header (same for every page)-->
+    
+              <!-- Main Display Begins -->
+    
+                
+              <div class="content-display">
+                <h3>Client Information</h3>
+                    <p>Tell us a bit about you.</p>
+                        Choose a Category:
+                        <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+                        <option value=""></option>
+                        <option value="nutFree">nutFree</option>
+                        <option value="lactoseFree">lactoseFree</option>
+                        <option value="None">None</option>
+                        </select>
+              </div>
+    
+              <!-- Main Display Ends -->
+    
+                
+              <div class="footer">
+
+              </div>
+    
+            </div>
+    
+            <script src="script.js"></script>
+        </body>
+    </body>
+</html>
